@@ -188,7 +188,7 @@ def get_debug_build_logs():
 # TODO: delete this once in production
 @app.post("/frontend/contribute/debug")
 def frontend_debug_contribute():
-    logger.info("Debug data were fakely stored.")
+    logger.info("Debug data were fakely stored. {0}".format("useless format"))
     return {"status": "ok"}
 
 
